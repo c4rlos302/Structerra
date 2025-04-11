@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Structerra - Proyectos</title>
+  <!-- Vincular el CSS -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Vincular Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Encabezado -->
+  <header>
+    <img src="imagenes/logo.jpeg" alt="Logo de Structerra" class="logo" />
+    <h1>Structerra</h1>
+    <p>Arquitectura y Construcción</p>
+  </header>
+
+  <!-- Sección de Proyectos -->
+  <h2>Proyectos Destacados</h2>
+  <section id="projects">
+    
+    <!-- Proyecto 1: data-images contiene las rutas separadas por coma -->
+    <div class="project" data-images="imagenes/azador1.jpg, imagenes/azador2.jpg, imagenes/azador3.jpg, imagenes/azador4.jpg">
+      <img class="project-thumbnail" src="imagenes/azador1.jpg" alt="Proyecto 1" />
+    </div>
+
+    <!-- Proyecto 2 -->
+    <div class="project" data-images="imagenes/puerta1.jpg, imagenes/puerta2.jpg, imagenes/puerta3.jpg, imagenes/puerta4.jpg">
+      <img class="project-thumbnail" src="imagenes/puerta1.jpg" alt="Proyecto 2" />
+    </div>
+
+    <!-- Proyecto 3 -->
+    <div class="project" data-images="imagenes/pergola1.jpg, imagenes/pergola2.jpg, imagenes/pergola3.jpg, imagenes/pergola4.jpg">
+        <img class="project-thumbnail" src="imagenes/pergola1.jpg" alt="Proyecto 2" />
+      </div>
+
+      <div class="project" data-images="imagenes/azador1.jpg, imagenes/azador2.jpg, imagenes/azador3.jpg, imagenes/azador4.jpg">
+        <img class="project-thumbnail" src="imagenes/azador1.jpg" alt="Proyecto 1" />
+      </div>
+  
+      <!-- Proyecto 2 -->
+      <div class="project" data-images="imagenes/puerta1.jpg, imagenes/puerta2.jpg, imagenes/puerta3.jpg, imagenes/puerta4.jpg">
+        <img class="project-thumbnail" src="imagenes/puerta1.jpg" alt="Proyecto 2" />
+      </div>
+  
+      <!-- Proyecto 3 -->
+      <div class="project" data-images="imagenes/pergola1.jpg, imagenes/pergola2.jpg, imagenes/pergola3.jpg, imagenes/pergola4.jpg">
+          <img class="project-thumbnail" src="imagenes/pergola1.jpg" alt="Proyecto 2" />
+        </div>
+  </section>
+
+  <!-- Modal para la galería de imágenes -->
+  <div id="modal" class="modal">
+    <span class="close">&times;</span>
+    <button class="nav prev">&#10094;</button>
+    <img class="modal-content" id="imgModal" src="" alt="Imagen ampliada" />
+    <button class="nav next">&#10095;</button>
+  </div>
+
+  <!-- Sección de Contacto -->
+  <section id="contact">
+    <h2>Contacto</h2>
+    <p>¿Te interesa colaborar o quieres saber más sobre nuestro trabajo? ¡Contáctanos!</p>
+    <form id="contactForm">
+      <input type="text" name="name" placeholder="Tu nombre" required />
+      <input type="email" name="email" placeholder="Tu correo" required />
+      <textarea name="message" rows="5" placeholder="Tu mensaje" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Structerra. Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- Vinculación del JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
